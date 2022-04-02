@@ -23,7 +23,7 @@ public class TestBase {
     public void setup() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\MR\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/imac/Documents/Chrome/chromedriver");
         driver = new ChromeDriver(options);
         driver.get("https://www.facebook.com/");
         driver.manage().window().maximize();
@@ -33,8 +33,8 @@ public class TestBase {
     @BeforeMethod
     public void login() {
         LoginPage loginpage = new LoginPage(driver);
-        loginpage.enterFullName("enterUsername");
-        loginpage.enterPassword("EnterPassword");
+        loginpage.enterFullName("rahul.rahulalphabin@gmail.com");
+        loginpage.enterPassword("Rahul@123");
         loginpage.submitLogin();
 
     }
