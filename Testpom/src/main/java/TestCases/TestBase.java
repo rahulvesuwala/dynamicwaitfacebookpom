@@ -33,7 +33,7 @@ public class TestBase {
     @BeforeMethod
     public void login() {
         LoginPage loginpage = new LoginPage(driver);
-        loginpage.enterFullName("rahul.alphabin@gmail.com");
+        loginpage.enterFullName("rahul.rahulalphabin@gmail.com");
         loginpage.enterPassword("Rahul@123");
         loginpage.submitLogin();
 
